@@ -14,7 +14,7 @@ coco_model = YOLO('../weights/yolov8n.pt')
 license_plate_detector = YOLO('../weights/license_plate_detector.pt')
 
 # load video
-cap = cv2.VideoCapture('../output/sample.mp4')
+cap = cv2.VideoCapture('../images/input/sample.mp4')
 
 # vehicles = ['car', 'motorbike', 'bus', 'truck']
 vehicles = [2, 3, 5, 7]
@@ -73,4 +73,4 @@ while ret:
                                                                     'text_score': license_plate_text_score}}
 
 # write results
-write_csv(results, '../output/results.csv')
+write_csv(results, '../images/output/results.csv')
