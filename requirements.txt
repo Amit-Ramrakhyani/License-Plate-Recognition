@@ -2,3 +2,8 @@ filterpy
 scikit-image
 lap
 easyocr
+tensorflow
+matplotlib
+opencv-python
+numpy
+streamlit
