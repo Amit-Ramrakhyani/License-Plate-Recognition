@@ -26,7 +26,7 @@ while ret:
     frame_num += 1
     ret, frame = cap.read()
     if ret:
-        if frame_num > 100:
+        if frame_num > 500:
             break
         results[frame_num] = {}
         # detect vehicles

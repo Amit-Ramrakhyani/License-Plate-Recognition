@@ -9,7 +9,7 @@ import matplotlib.gridspec as gridspec
 from tensorflow.keras import optimizers
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.layers import Dense, Flatten, MaxPooling2D, Dropout, Conv2D, BatchNormalization, Activation
+from tensorflow.keras.layers import Dense, Flatten, MaxPooling2D, Dropout, Conv2D, BatchNormalization
 
 
 def detect_plate(img, text=''): # the function detects and perfors blurring on the number plate.
@@ -22,7 +22,7 @@ def detect_plate(img, text=''): # the function detects and perfors blurring on t
     for (x,y,w,h) in plate_rect:
         roi_ = roi[y:y+h, x:x+w, :] # extracting the Region of Interest of license plate for blurring.
         plate = roi[y:y+h, x:x+w, :]
-        cv2.rectangle(plate_img, (x,y), (x+w, y+h), (51,181,155), 3) 
+        cv2.rectangle(plate_img, (x,y), (x+w+10, y+h+10), (51,181,155), 3) 
     
     if text!='':
         plate_img = cv2.putText(plate_img, text, (x,y-5), cv2.FONT_HERSHEY_COMPLEX_SMALL , 1, (51,181,155), 1, cv2.LINE_AA)
