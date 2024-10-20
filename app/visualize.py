@@ -94,13 +94,13 @@ while ret:
                     4.3,
                     17)
 
-                cv2.putText(frame,
-                            license_plate[df_.iloc[row_indx]['car_id']]['license_plate_number'],
-                            (int((car_x2 + car_x1 - text_width) / 2), int(car_y1 - H - 250 + (text_height / 2))),
-                            cv2.FONT_HERSHEY_SIMPLEX,
-                            4.3,
-                            (0, 0, 0),
-                            17)
+                # cv2.putText(frame,
+                #             license_plate[df_.iloc[row_indx]['car_id']]['license_plate_number'],
+                #             (int((car_x2 + car_x1 - text_width) / 2), int(car_y1 - H - 250 + (text_height / 2))),
+                #             cv2.FONT_HERSHEY_SIMPLEX,
+                #             4.3,
+                #             (0, 0, 0),
+                #             17)
 
             except:
                 pass
