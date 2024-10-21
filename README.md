@@ -1,6 +1,6 @@
 # License Plate Detection and Recognition
 
-This project implements a license plate detection and recognition system.  
+This project implements a license plate detection and recognition system. 
 
 ## Images
 
@@ -22,12 +22,21 @@ cd License-Plate-Recognition
 python -m pip install -r requirements.txt
 ```
 
-4. Go to the app directory
+**NOTE**: You also need to install "Tesseract-OCR" for the OCR part in `recognition-tesseractocr.ipynb`
+
+For Ubuntu/Debian based systems, you can install it using the following commands:
+
+```bash
+sudo apt update
+sudo apt install tesseract-ocr
+```
+
+1. Go to the app directory
 ```bash
 cd app
 ```
 
-5. This project is dependent on the **Sort** module. You can download it using the following command: 
+1. This project is dependent on the **Sort** module. You can download it using the following command: 
 
 ```bash
 git clone https://github.com/abewley/sort.git
